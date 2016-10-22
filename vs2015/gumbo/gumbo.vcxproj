@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\3rd\gumbo\attribute.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\char_ref.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\error.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\parser.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\string_buffer.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\string_piece.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\tag.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\tokenizer.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\utf8.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\util.c" />
+    <ClCompile Include="..\..\src\3rd\gumbo\vector.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\3rd\gumbo\attribute.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\char_ref.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\error.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\gumbo.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\insertion_mode.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\parser.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\string_buffer.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\string_piece.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tag_enum.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tag_gperf.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tag_sizes.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tag_strings.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tokenizer.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\tokenizer_states.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\token_type.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\utf8.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\util.h" />
+    <ClInclude Include="..\..\src\3rd\gumbo\vector.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2661FA5E-ACC3-4D27-8FD2-9DBB0414EEDC}</ProjectGuid>
+    <RootNamespace>gumbo</RootNamespace>
+    <ProjectName>gumbo</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\vcprops\common.props" />
+    <Import Project="..\..\vcprops\common_lib.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\..\vcprops\common.props" />
+    <Import Project="..\..\vcprops\common_lib.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)..\src\posix\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)..\src\posix\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <BufferSecurityCheck>false</BufferSecurityCheck>
+      <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <DisableSpecificWarnings>4005</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
