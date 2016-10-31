@@ -1,140 +1,206 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{07934a85-8b61-443d-a0ee-b2eedb74f3cd}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{1d99675b-433d-4a21-9e50-ed4ab8b19762}</UniqueIdentifier>
-      <Extensions>h;hpp;hxx;hm;inl;fi;fd</Extensions>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{431c0958-fa71-44d0-9084-2d19d100c0cc}</UniqueIdentifier>
       <Extensions>ico;cur;bmp;dlg;rc2;rct;bin;cnt;rtf;gif;jpg;jpeg;jpe</Extensions>
     </Filter>
+    <Filter Include="zlib">
+      <UniqueIdentifier>{1d99675b-433d-4a21-9e50-ed4ab8b19762}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd;cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="minizip">
+      <UniqueIdentifier>{07934a85-8b61-443d-a0ee-b2eedb74f3cd}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd;cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+    <Filter Include="minizip\aes">
+      <UniqueIdentifier>{77907eaa-30ef-457e-8698-e84bb8396762}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\3rd\zlib\masmx64\inffas8664.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\src\3rd\zlib\adler32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\compress.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\crc32.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\deflate.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\gzclose.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\gzlib.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\gzread.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\gzwrite.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\infback.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\inffast.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\inflate.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\inftrees.c">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\uncompr.c">
-      <Filter>Source Files</Filter>
+      <Filter>zlib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\3rd\zlib\zutil.c">
-      <Filter>Source Files</Filter>
+      <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\minizip\unzip.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\src\3rd\zlib\compress.c">
+      <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\minizip\zip.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\src\3rd\zlib\crc32.c">
+      <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\minizip\ioapi.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\src\3rd\zlib\deflate.c">
+      <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\src\3rd\zlib\minizip\iowin32.c">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="..\..\src\3rd\zlib\gzclose.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\gzlib.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\gzread.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\gzwrite.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\infback.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\masmx64\inffas8664.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\inffast.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\inflate.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\inftrees.c">
+      <Filter>zlib</Filter>
     </ClCompile>
     <ClCompile Include="..\..\src\3rd\zlib\trees.c">
-      <Filter>Source Files</Filter>
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\uncompr.c">
+      <Filter>zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\ioapi.c">
+      <Filter>minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\iowin32.c">
+      <Filter>minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\unzip.c">
+      <Filter>minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\zip.c">
+      <Filter>minizip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\aescrypt.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\aeskey.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\aestab.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\entropy.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\fileenc.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\hmac.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\prng.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\pwd2key.c">
+      <Filter>minizip\aes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\3rd\zlib\minizip\aes\sha1.c">
+      <Filter>minizip\aes</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\src\3rd\zlib\deflate.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\inffast.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\inflate.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\inftrees.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\zconf.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\zlib.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\zutil.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\crc32.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\gzguts.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\inffixed.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\3rd\zlib\minizip\unzip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\3rd\zlib\minizip\zip.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\3rd\zlib\minizip\ioapi.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\3rd\zlib\minizip\iowin32.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\trees.h">
-      <Filter>Header Files</Filter>
+      <Filter>zlib</Filter>
     </ClInclude>
     <ClInclude Include="..\..\src\3rd\zlib\minizip\crypt.h">
-      <Filter>Header Files</Filter>
+      <Filter>minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\ioapi.h">
+      <Filter>minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\iowin32.h">
+      <Filter>minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\unzip.h">
+      <Filter>minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\zip.h">
+      <Filter>minizip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\aes.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\aes_via_ace.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\aesopt.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\aestab.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\brg_endian.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\brg_types.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\entropy.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\fileenc.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\hmac.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\prng.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\pwd2key.h">
+      <Filter>minizip\aes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\3rd\zlib\minizip\aes\sha1.h">
+      <Filter>minizip\aes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\3rd\zlib\README.md" />
     <None Include="..\..\src\3rd\zlib\zlibvc.def">
-      <Filter>Source Files</Filter>
+      <Filter>zlib</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="..\..\src\3rd\zlib\zlib.rc">
-      <Filter>Source Files</Filter>
+      <Filter>zlib</Filter>
     </ResourceCompile>
   </ItemGroup>
 </Project>

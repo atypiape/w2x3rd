@@ -9,7 +9,7 @@
     <ClCompile>
       <AdditionalIncludeDirectories>$(SolutionDir)..\src\</AdditionalIncludeDirectories>
       <ProgramDataBaseFileName>$(IntDir)$(TargetName).vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
-      <PreprocessorDefinitions>_WIN32_WINNT=0x501;PSAPI_VERSION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;_WIN32_WINNT=0x501;PSAPI_VERSION=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <AdditionalDependencies>kernel32.lib;user32.lib</AdditionalDependencies>

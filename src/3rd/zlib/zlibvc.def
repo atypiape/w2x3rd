@@ -70,7 +70,7 @@ EXPORTS
         unzeof                                   @71
         unzCloseCurrentFile                      @72
         unzGetGlobalComment                      @73
-        unzStringFileNameCompare                 @74
+;        unzStringFileNameCompare                 @74
         unzLocateFile                            @75
         unzGetLocalExtrafield                    @76
         unzOpen2                                 @77

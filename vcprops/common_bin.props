@@ -9,7 +9,11 @@
   <ItemDefinitionGroup>
     <Link>
       <AdditionalLibraryDirectories>$(SolutionDir)..\lib\$(Configuration);$(SolutionDir)build\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(SolutionDir)build\lib\$(Configuration)\$(TargetName).lib</ImportLibrary>
     </Link>
+    <ClCompile>
+      <PreprocessorDefinitions>_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
   </ItemDefinitionGroup>
   <ItemGroup />
 </Project>

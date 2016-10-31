@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="xzipfile">
+      <UniqueIdentifier>{d07097fc-75c2-4334-bd79-4b05d40ded73}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;fi;fd;cpp;c;cxx;rc;def;r;odl;hpj;bat;for;f90</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\3rd\xzipfile\xzipfile.c">
+      <Filter>xzipfile</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\3rd\xzipfile\xzipfile.h">
+      <Filter>xzipfile</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
